@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+
+  <!-- the title and score section -->
+<div class="wrapper">
+    
+  <div class="header">
+    <p>rock</p>
+    <p>paper</p>
+    <p>Scissors</p>
+  </div>
+
+  <div class="scoreboard">
+    <p>Score</p>
+    <p class="score">0</p>
+  </div>
+
+</div>
+
+<!-- the buttons section for the rock, paper, scissors -->
+<main class="main">
+
+  <button class="btn-circle paper" data-choice="paper">
+    <span>
+      <img src="./images/icon-paper.svg" alt="paper-icon">
+    </span>
+  </button>
+
+  <button class="btn-circle scissors" data-choice="scissors">
+    <span>
+      <img src="./images/icon-scissors.svg" alt="scissors-icon">
+    </span>
+  </button>
+
+  <button class="btn-circle rock" data-choice="rock">
+    <span>
+      <img src="./images/icon-rock.svg" alt="rock-icon">
+    </span>
+  </button>
+
+</main>
+
+<!-- the rules button and rule modal -->
+<div class="rules">
+  <button>rules</button>
+</div>
+
+<div class="rules-modal">
+  <div class="rule">
+
+    <div class="close">
+      <p>rules</p>
+      <img class="close-btn" src="./images/icon-close.svg" alt="close-icon">
+    </div>
+
+    <img class="rule-img" src="./images/image-rules.svg" alt="rules">
+
+  </div>
+</div>
+
+<!-- the result section after the player has choosen rock, paper, scissors -->
+<section class="result-section">
+  <div class="user-picked selection">
+
+    <p>you picked</p>
+
+    <button class="btn-circle user-select picked">
+      <span>
+        <img class="user-pick" src="./images/icon-rock.svg" alt="paper-icon">
+      </span>
+    </button>
+
+  </div>
+
+  <div class="win-lose late-show">
+
+    <p class="output">you win</p>
+    <button class="play-again">play again</button>
+
+  </div>
+
+  <div class="user-picked selection no-show">
+    
+    <p>the house picked</p>
+
+    <button class="btn-circle computer-select picked">
+      <span>
+        <img class="house-pick" src="./images/icon-paper.svg" alt="scissors-icon">
+      </span>
+    </button>
+
+  </div>
+</section>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+
+  <script src="script.js"></script>
+</body>
+</html>
