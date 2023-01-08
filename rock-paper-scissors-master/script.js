@@ -122,9 +122,7 @@ function checkWinner() {
     else{
         // user lost
         setTimeout(() => {
-            if (scoreEl.textContent > 0) {
                 scoreEl.textContent --    
-            }
         }, 1500);
 
         output.textContent = 'you lost'
